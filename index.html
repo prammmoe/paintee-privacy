@@ -88,16 +88,17 @@
     <img src="logopaintee.png" alt="Paintee Logo" style="display: inline; margin: 0 auto 20px; width: 150px; height: auto;">
   <h1>Privacy Policy – Paintee</h1>
 
-  <p><strong>Last updated:</strong> July 5, 2025</p>
+  <p><strong>Last updated:</strong> July 8, 2025</p>
 
   <p>Paintee is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard information when you use our app.</p>
 
-  <h2>1. Information We Collect</h2>
+  <h2>1. Information We Collect (Or we didn't collect)</h2>
   <ul>
     <li><strong>Camera access:</strong> Used to display your face in real-time for face painting features. We do not store any camera footage.</li>
     <li><strong>Photo library access:</strong> Used only when you save the face painting result to your device. We do not access your photo library without your permission.</li>
     <li><strong>Motion data (CoreMotion):</strong> Used to detect device movement and improve face painting stability. No motion data is stored or transmitted.</li>
     <li><strong>Face detection (Vision framework):</strong> Used to detect facial landmarks and assist with accurate painting guidance. This process runs on-device and is not stored or shared.</li>
+    <li><strong>Augmented Reality Technology (RealityKit):</strong> Used to track user's face position and facial features in real-time. See <a href="#ar-tech">Face Data and AR Technology</a></li>
   </ul>
 
   <h2>2. Use of Information</h2>
@@ -108,11 +109,34 @@
     <li>Improving the accuracy and responsiveness of the live face painting features</li>
   </ul>
 
+  <h2 id="ar-tech">3. Face Data and AR Technology</h2>
+  <p>Paintee uses Apple’s TrueDepth API to provide real-time augmented reality (AR) guidance for face painting activities. This includes accessing facial geometry data such as face anchor points (e.g., eyes, nose, chin) for the sole purpose of aligning visual guides on the user's face. We do not perform any identification using face data, the AR face tracking feature is strictly used to enhance user interaction and provide a precise, symmetrical painting experience.</p>
+  <ul>
+    <li>Collection: Paintee does not collect, store, or transmit any facial data, depth maps, or raw imagery.      g</li>
+    <li>Use: Face data is used only in real-time and on-device to accurately display face-aligned AR elements such as painting guides and dot placements.</li>
+    <li>Storage & Retention: No face data is retained after the session ends. Paintee does not save any facial data on-device or in the cloud.</li>
+    <li>Disclosure & Sharing: We do not share facial data with any third parties, now or in the future.</li>
+  </ul>
+
   <h2>3. Data Storage and Security</h2>
-  <p>Paintee does not store or transmit any personal data. All processing occurs locally on your device. Saved photos are stored only in your device’s photo library at your request.</p>
+  <p>Paintee is designed with privacy and data minimization in mind. We do not store, upload, or transmit any personal, sensitive, or biometric data to any servers or to any third-party service. All processing occurs locally on your device. Saved photos are stored only in your device’s photo library at your request.</p>
+  <ul>
+    <li>Camera data is used solely to enable the live preview for face painting. No camera footage is saved or transmitted at any point.</li>
+    <li>Motion sensor data from CoreMotion is accessed temporarily to improve stability during the face painting process. It is never saved, logged, or sent externally.</li>
+    <li>Facial data, such as landmarks and anchor points, is accessed via Apple’s frameworks only for rendering AR guides. This data exists only in memory during the session and is discarded immediately when the session ends.</li>
+    <li>Saved photos are stored only in your device’s local photo library, and only when you explicitly choose to save your result. Paintee does not access or scan your existing photo library at any time.</li>
+  </ul>
+  <p>We take user privacy seriously and follow Apple’s best practices for data security. Our app does not include any background data sync, remote logging, or analytics. No data leaves your device under any circumstances.</p>
 
   <h2>4. Third-Party Services</h2>
-  <p>Paintee does not use third-party analytics, ads, or tracking. No data is shared with third parties.</p>
+  <p>Paintee does not use or integrate any third-party services that collect user data. This includes:</p>
+  <ul>
+    <li>No analytics SDKs (e.g., Google Analytics, Firebase Analytics)</li>
+    <li>No advertising networks or tracking libraries</li>
+    <li>No third-party cloud storage or server communication</li>
+  </ul>
+  <p>All functionalities of Paintee—such as real-time face tracking, camera preview, photo saving, and motion detection—are built using Apple’s native frameworks and run entirely within your device.</p>
+  <p>By deliberately avoiding third-party integrations, we ensure that your personal and usage data remain private, secure, and fully under your control. Your experience with Paintee is completely self-contained, and we do not share or sell any user data for any reason, now or in the future.</p>
 
   <h2>5. User Rights</h2>
   <p>You have the right to:</p>
